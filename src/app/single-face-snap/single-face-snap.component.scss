@@ -1,0 +1,74 @@
+.face-snap-card {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease-in-out;
+
+  &.snapped {
+    filter: grayscale(1);
+  }
+
+  h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  a {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+
+    &:hover {
+      color: #0056b3;
+    }
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  p {
+    margin: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #666;
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px;
+    transition: background-color 0.2s ease-in-out;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  span {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00a800;
+    margin-left: 10px;
+  }
+}
